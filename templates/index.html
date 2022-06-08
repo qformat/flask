@@ -1,0 +1,113 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.socket.io/4.5.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    <title>睿视微闪--首页</title>
+
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords"
+          content="Stylish Creative Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- Meta tag Keywords -->
+
+    <!-- css files -->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/static/css/font-awesome.css" rel="stylesheet"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- css files -->
+
+    <!-- Online-fonts -->
+    {#<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">#}
+    <!-- //Online-fonts -->
+</head>
+<body>
+
+<!-- main -->
+<div class="main">
+    <canvas id="myCanvas"></canvas>
+    <div class="main-w3l">
+
+        <h1 class="logo-w3">睿视微闪微信API接口</h1>
+        <div class="footer-w3l main2">
+            <h3><a href="/login/">登录</a>&nbsp; &nbsp; <a href="/reg/">注册</a></h3>
+        </div>
+
+        <div class="w3layouts-title">
+            <a href="/"><input type="button" value="首页" name="login"></a>
+            <a href="/api/"><input type="button" value="在线调试" name="login"></a>
+            <a href="/state/"><input type="button" value="接口说明" name="login"></a>
+        </div>
+
+        <div class="w3layouts-main">
+            <h3>欢迎使用睿视微闪微信API接口</h3>
+            <h3>本接口主要用于微信公众号模板私发私用，可以创建应用提醒，服务器提醒，股票价格提醒，商品信息提醒，等多场景应用！
+                <br>
+                <h3>使用接口前需要先关注公众号，请扫描下方二维码进行关注！</h3>
+
+                <h3>{{ wel }}</h3>
+
+                <h3><a href="/logout">{{ out }}</a></h3>
+                <h3>{{ erro }}</h3>
+                <h3><img src="{{ qrcode }}"/></h3>
+                <h3>{{ echo }}</h3>
+                <h3><a href="/rest">{{ rest }}</a></h3>
+                <h3>This interface is mainly used to send wechat official account templates for private use. It can
+                    create
+                    application reminders, server reminders, stock price reminders, commodity information reminders, and
+                    other scenarios!
+                </h3>
+        </div>
+
+        <div class="clear"></div>
+        <!-- //main -->
+
+        <!--footer-->
+        <div class="footer-w3l">
+            <p>&copy; 睿视微闪 | Design by <a href="#">K brother</a></p>
+        </div>
+        <!--//footer-->
+    </div>
+</div>
+
+
+<!--scripts-->
+
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- particles-JavaScript -->
+<script src="/static/js/particles.min.js"></script>
+<script>
+    window.onload = function () {
+        Particles.init({
+            selector: '#myCanvas',
+            color: '#eba7a7',
+            connectParticles: true,
+            minDistance: 90
+        });
+    };
+</script>
+
+<!-- //particles-JavaScript -->
+<!--//scripts-->
+
+
+</body>
+</html>

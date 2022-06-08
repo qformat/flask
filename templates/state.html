@@ -1,0 +1,140 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>睿视微闪--API接口说明</title>
+
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords"
+          content="Stylish Creative Forms Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <!-- Meta tag Keywords -->
+
+    <!-- css files -->
+    <link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="/static/css/font-awesome.css" rel="stylesheet"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- css files -->
+
+    <!-- Online-fonts -->
+    {#<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">#}
+    <!-- //Online-fonts -->
+</head>
+<body>
+
+<!-- main -->
+<div class="main">
+    <canvas id="myCanvas"></canvas>
+    <div class="main-w3l">
+        <h1 class="logo-w3">睿视微闪--API接口说明！</h1>
+        <div class="footer-w3l main2">
+            <h3><a href="/login/">登录</a>&nbsp; &nbsp; <a href="/reg/">注册</a></h3>
+        </div>
+
+        <div class="w3layouts-title">
+            <a href="/"><input type="button" value="首页" name="login"></a>
+            <a href="/api/"><input type="button" value="在线调试" name="login"></a>
+            <a href="/state/"><input type="button" value="接口说明" name="login"></a>
+        </div>
+        <div class="w3layouts-main">
+            <h9>API接口说明接口使用说明：<p>
+                1.先关注微信公众号“睿视信息”，打开微信后扫描二维码后系统会自动为您分配专属的RswsID，注意不要透漏给别人。
+                <p>
+                    2.如何调用：
+                <p>
+                    （1）http://wxapi.rsws.top/apisend/?rswsid=专属rswsid&title=发送标题&msg=发送内容
+                <p>
+                    （2）使用get或者post方式都可以进行调用，需要注意的是get方式有长度限制，而post方式没有长度限制，因此建议使用post方式来调用。
+                <p>
+                    举例--使用python调用如下：
+                <p>
+                    （1）直接使用requests.post或者request.get调用网址：
+                <p>
+                    首先导入：import requests （导入模块）
+                <p>
+                    直接使用命令：requests.post(http://wxapi.rsws.top/apisend/?rswsid=您获取到的(rswsid)&title=发送标题&msg=发送内容)
+                <p>
+                    （2）使用调用变得通俗易懂更加直观的方式
+                <p>
+                    import requests
+                <p>
+                    rswsid = 'RSWS3dc817ce15311ecb491'  # 这里替换成你专属的RswsID
+                <p>
+                    ws_url = "http://wxapi.rsws.top/apisend/"  # 接口地址
+                <p>
+                    title = '要发送的标题'  # 替换成想要发送的标题
+                <p>
+                    msg = '要发送的内容'    # 替换成想要发送的内容
+                <p>
+                    ws_params = {         # url链接参数
+                <p>
+                    'rswsid': rswsid,
+                <p>
+                    'title': title,
+                <p>
+                    'msg': msg
+                <p>
+                    }
+                <p>
+                    resp = requests.post(ws_url,params=ws_params) # 使用post
+                <p>
+                    if resp.status_code == 200:
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print('发送成功')        # 判断是否发送成功
+                <p>
+                    else:
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;print('发送失败！')
+            </h9>
+
+
+        </div>
+
+        <div class="clear"></div>
+        <!-- //main -->
+
+        <!--footer-->
+        <div class="footer-w3l">
+            <p>&copy; 睿视微闪 | Design by <a href="#">K brother</a></p>
+        </div>
+        <!--//footer-->
+    </div>
+</div>
+
+
+<!--scripts-->
+
+<!-- js -->
+<script type="text/javascript" src="/static/js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- particles-JavaScript -->
+<script src="/static/js/particles.min.js"></script>
+<script>
+    window.onload = function () {
+        Particles.init({
+            selector: '#myCanvas',
+            color: '#eba7a7',
+            connectParticles: true,
+            minDistance: 90
+        });
+    };
+</script>
+
+<!-- //particles-JavaScript -->
+<!--//scripts-->
+
+
+</body>
+</html>
